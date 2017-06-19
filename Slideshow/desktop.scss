@@ -1,0 +1,93 @@
+@import '../../helpers/css/shared/mixins';
+
+// SLIDESHOW
+.adx-slideshow {
+  min-width: 100%;
+	position: relative;
+
+  .adx-slide {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  	min-width: 100%;
+  	width: 100%;
+    z-index:-9999;
+  }
+
+
+  .adx-slideshow__content {
+    position: relative;
+  }
+}
+
+// SLIDESHOW PAGINATION
+.adx-slideshow-pagination {
+  z-index: 1;
+}
+
+.adx-slideshow-pagination__btn {
+  border-width: 1px;
+  border-style: solid;
+  display: block;
+  background-color: #000;
+  background-position: center center;
+  cursor: pointer;
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.adx-slideshow-pagination__btn__img {
+  height: 64px;
+  width: 64px;
+}
+
+// AUTOMOTIVE STYLES
+.adx-slideshow--automotive {
+	overflow: hidden;
+
+  // SLIDESHOW PAGINATION
+  .adx-slideshow-pagination {
+    margin: 15px 0 0 -10px;
+    position: absolute;
+  }
+
+  // FADE TRANSITION
+  .adx-slides__slide-enter {
+    opacity: 0.01;
+  }
+
+  .adx-slides__slide-enter.adx-slides__slide-enter-active {
+    @include transition(opacity 500ms ease-in);
+    opacity: 1;
+  }
+
+  .adx-slideshow-pagination__btn {
+    margin: 10px 0;
+  }
+}
+
+// PRODUCT RANGE STYLES
+.adx-slideshow--product-range {
+  .adx-slides {
+    position: relative;
+  }
+
+  // SLIDESHOW PAGINATION
+  .adx-slideshow-pagination {
+    bottom: 50px;
+    position: relative;
+    text-align: center;
+  }
+
+  .adx-slideshow-pagination__btn {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+
+  .adx-slideshow-pagination__btn__img {
+    height: 100px;
+    width: 100px;
+  }
+}

@@ -1,0 +1,28 @@
+.adx-divider {
+  clear: both;
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.adx-divider__content {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.adx-divider__content__heading {
+  font-size: 18px;
+}
+
+.adx-divider__line {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 0;
+}

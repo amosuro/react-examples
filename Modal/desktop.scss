@@ -1,0 +1,43 @@
+@import '../../helpers/css/shared/mixins';
+
+.adx-overlay {
+  background-color: rgba(0,0,0,0.7);
+  border: 0;
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.adx-modal {
+  @include transform(translateX(-50%) translateY(-50%));
+  background: #fff;
+  left: 50%;
+  min-width: 800px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  width: 70%;
+}
+
+.adx-modal__close {
+  background: #ffffff;
+  border: 2px solid #dddddd;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 40px;
+  padding: 0.6em 0.5em;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  width: 40px;
+}
